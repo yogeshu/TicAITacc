@@ -1,11 +1,16 @@
 import React from 'react'
 
 
-
-
+import Header from './Header'
+import Board from './Board'
+import GameInstruction from './GameIntruction'
 const Game = ()=>{
     return(
-        <div> Game </div>
+        <div> <Header/> 
+        
+         <Board/>
+         <GameInstruction/>
+         </div>
     )
 }
 export default Game;
