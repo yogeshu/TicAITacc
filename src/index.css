@@ -3,26 +3,46 @@
   margin: 100px;
   font-family: "Fredericka the Great", cursive;
 }
-
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
 .reset {
   margin: 30px auto;
 }
-
+.piece{
+  display: inline-block;
+}
 .title {
-  font-size: 70px;
+  font-size: 40px;
 }
 
+.title-Game{
+  font-size: 200px;
+  font-weight: 900;
+   font-family:'Dela Gothic One', cursive;
+   color: blue;
+}
+.title-GameFu{
+  font-size: 200px;
+  font-weight: 900;
+  font-family: 'Dela Gothic One';
+  color: rgb(216, 123, 24);
+}
 .score {
   margin: 10px auto;
   text-align: center;
-  width: 390px;
-  height: 40px;
+  /* width: 390px; */
+  /* height: 40px; */
   box-sizing: border-box;
 }
+.thescore{
+  /* box-shadow: 2px 4px -30px 4px ; */
+  box-shadow: -1px 5px 21px -4px rgba(255, 255, 255, 0.68);
+  border-radius: 15px;
 
+  /* box-shadow: -1px 1px 11px -2px rgb(145, 143, 143); */
+
+}
 .score-div {
-  width: 195px;
-  float: left;
+  /* width: 195px; */
 }
 
 .clear {
@@ -31,6 +51,7 @@
 
 .App-box {
   background-color: Transparent;
+  
   outline: none;
   border: none;
   padding: 0;
@@ -47,58 +68,72 @@
 .App-box:hover {
   background: #cfcfcf;
 }
-
+.App-box[data-pro='X']{
+  font-size: 100px;
+  font-weight: 900;
+ color: blue;
+}
+.App-box[data-pro='O']{
+  font-size: 100px;
+  font-weight: 900;
+  color: orange;
+}
+.x {
+  font-size: 70;
+}
 .red {
-  color: red;
+  color: red !important;
 }
 
 .App p {
   /*color: b;*/
-  text-shadow: 0px 0px 0px rgba(129, 150, 150, 1);
+  text-shadow: 0px 0px 0px rgb(129, 150, 150);
   font-family: "Crafty Girls", cursive;
 }
 
 .App-main-box {
   display: inline-block;
   box-sizing: border-box;
+  -webkit-box-shadow: -1px 1px 11px -2px rgb(240, 239, 239);
+-moz-box-shadow: -1px 1px 11px -2px rgb(248, 241, 241);
+box-shadow: -1px 1px 11px -2px rgb(106, 106, 106);
   height: 414px;
   width: 414px;
   padding: 10px;
-  border: solid #000 2px;
 }
 
 .App-main-box button:nth-child(1) {
-  border-right: solid #000 2px;
+  border-right: solid rgb(253, 253, 253) 2px;
   border-bottom: solid #000 2px;
-  -webkit-box-shadow: -3px -2px 2px 0px rgba(0, 0, 0, 0.75);
+  /* -webkit-box-shadow: -3px -2px 2px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: -3px -2px 2px 0px rgba(0, 0, 0, 0.75);
-  box-shadow: -3px -2px 2px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: -3px -2px 2px 0px rgba(0, 0, 0, 0.75); */
 }
 
 .App-main-box button:nth-child(2) {
   border-left: solid #000 2px;
   border-right: solid #000 2px;
   border-bottom: solid #000 2px;
-  -webkit-box-shadow: 0px -2px 2px 0px rgba(0, 0, 0, 0.75);
+  /* -webkit-box-shadow: 0px -2px 2px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0px -2px 2px 0px rgba(0, 0, 0, 0.75);
-  box-shadow: 0px -2px 2px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px -2px 2px 0px rgba(0, 0, 0, 0.75); */
 }
 
 .App-main-box button:nth-child(3) {
-  border-left: solid #000 2px;
+  /* border-left: solid #000 2px; */
   border-bottom: solid #000 2px;
-  -webkit-box-shadow: 2px -2px 2px 0px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 2px -2px 2px 0px rgba(0, 0, 0, 0.75);
-  box-shadow: 2px -2px 2px 0px rgba(0, 0, 0, 0.75);
+  /* -webkit-box-shadow: 2px -2px 2px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 2px -2px 2px 0px rgba(0, 0, 0, 0.75); */
+  /* box-shadow: 2px -2px 2px 0px rgba(0, 0, 0, 0.75); */
 }
 
 .App-main-box button:nth-child(4) {
   border-top: solid #000 2px;
-  border-right: solid #000 2px;
+  /* border-right: solid #000 2px; */
   border-bottom: solid #000 2px;
-  -webkit-box-shadow: -2px 0px 2px 0px rgba(0, 0, 0, 0.75);
+  /* -webkit-box-shadow: -2px 0px 2px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: -2px 0px 2px 0px rgba(0, 0, 0, 0.75);
-  box-shadow: -2px 0px 2px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: -2px 0px 2px 0px rgba(0, 0, 0, 0.75); */
 }
 
 .App-main-box button:nth-child(5) {
@@ -107,36 +142,36 @@
 
 .App-main-box button:nth-child(6) {
   border-top: solid #000 2px;
-  border-left: solid #000 2px;
+  /* border-left: solid #000 2px; */
   border-bottom: solid #000 2px;
-  -webkit-box-shadow: 2px 0px 2px 0px rgba(0, 0, 0, 0.75);
+  /* -webkit-box-shadow: 2px 0px 2px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 2px 0px 2px 0px rgba(0, 0, 0, 0.75);
-  box-shadow: 2px 0px 2px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 2px 0px 2px 0px rgba(0, 0, 0, 0.75); */
 }
 
 .App-main-box button:nth-child(7) {
-  border-right: solid #000 2px;
+  /* border-right: solid #000 2px; */
   border-top: solid #000 2px;
-  -webkit-box-shadow: -2px 2px 2px 0px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: -2px 2px 2px 0px rgba(0, 0, 0, 0.75);
-  box-shadow: -2px 2px 2px 0px rgba(0, 0, 0, 0.75);
+  /* -webkit-box-shadow: -2px 2px 2px 0px rgba(0, 0, 0, 0.75); */
+  /* -moz-box-shadow: -2px 2px 2px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: -2px 2px 2px 0px rgba(0, 0, 0, 0.75); */
 }
 
 .App-main-box button:nth-child(8) {
   border-top: solid #000 2px;
   border-left: solid #000 2px;
   border-right: solid #000 2px;
-  -webkit-box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.75);
+  /* -webkit-box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.75);
-  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.75); */
 }
 
 .App-main-box button:nth-child(9) {
-  border-left: solid #000 2px;
+  /* border-left: solid #000 2px; */
   border-top: solid #000 2px;
-  -webkit-box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.75);
+  /* -webkit-box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.75);
-  box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.75); */
 }
 
 .btn {
@@ -150,26 +185,23 @@
     color-stop(0.05, #f9f9f9),
     color-stop(1, #e9e9e9)
   );
-  background: -moz-linear-gradient(top, #f9f9f9 5%, #e9e9e9 100%);
-  background: -webkit-linear-gradient(top, #f9f9f9 5%, #e9e9e9 100%);
-  background: -o-linear-gradient(top, #f9f9f9 5%, #e9e9e9 100%);
-  background: -ms-linear-gradient(top, #f9f9f9 5%, #e9e9e9 100%);
-  background: linear-gradient(to bottom, #f9f9f9 5%, #e9e9e9 100%);
+ 
+  background: linear-gradient(to bottom, #0b25b8 5%, #1068a3 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f9f9f9', endColorstr='#e9e9e9',GradientType=0);
   background-color: #f9f9f9;
-  -moz-border-radius: 6px;
-  -webkit-border-radius: 6px;
-  border-radius: 6px;
+  -moz-border-radius: 25px;
+  -webkit-border-radius: 25px;
+  border-radius: 25px;
   border: 1px solid #dcdcdc;
   display: inline-block;
   cursor: pointer;
-  color: #666666;
+  color: #ffffff;
   font-family: "Fredericka the Great", cursive;
   font-size: 20px;
   font-weight: bold;
   padding: 6px 24px;
   text-decoration: none;
-  text-shadow: 0px 1px 0px #ffffff;
+  /* text-shadow: 0px 1px 0px #ffffff; */
   margin: 5px 20px;
 }
 .btn:hover {
@@ -178,15 +210,12 @@
     left top,
     left bottom,
     color-stop(0.05, #e9e9e9),
-    color-stop(1, #f9f9f9)
+    color-stop(1, hsl(0, 0%, 98%))
   );
-  background: -moz-linear-gradient(top, #e9e9e9 5%, #f9f9f9 100%);
-  background: -webkit-linear-gradient(top, #e9e9e9 5%, #f9f9f9 100%);
-  background: -o-linear-gradient(top, #e9e9e9 5%, #f9f9f9 100%);
-  background: -ms-linear-gradient(top, #e9e9e9 5%, #f9f9f9 100%);
-  background: linear-gradient(to bottom, #e9e9e9 5%, #f9f9f9 100%);
+ 
+  background: linear-gradient(to bottom, #ca5125 5%, #d8871e 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e9e9e9', endColorstr='#f9f9f9',GradientType=0);
-  background-color: #e9e9e9;
+  background-color: #020202;
 }
 .btn:active {
   position: relative;
