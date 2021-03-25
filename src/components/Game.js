@@ -1,10 +1,13 @@
 import Header from "./Header";
 import Board from "./Board";
 import GameInstruction from "./GameIntruction";
+
+
 const Game = (props) => {
   const {
     boardInfo,
     currentPlayer,
+    id,
     gameSetting: { piece, mode }
   } = props.state;
   const {
@@ -40,10 +43,12 @@ const Game = (props) => {
   ) : (
     <div className="App">
       <GameInstruction
+        piece={piece}
         mode={mode}
         setPlayer={props.setPlayer}
         setPiece={props.setPiece}
         resetGame={props.resetGame}
+        id={id}
       />
     </div>
   );

@@ -9,12 +9,13 @@ const Header = (props)=>{
         <div>
         <div className="score">
           <div className="score-div">
-            <p>{`${"Player 1"}`}</p>
-            <p>{`${player1}`}</p>
-          </div>
-          <div className="score-div">
-            <p>{`${props.score}`}</p>
-            <p>{`${player2}`}</p>
+            <span>{`${"Player 1  "}`} </span>
+            <button className="thescore">  {`${player1}`}  -  {`${ player2}`}</button>
+            {/* <span className="thescore"> </span> */}
+       
+            <span style={{margin: 10}}>{`${  props.score  }`}</span>
+
+            {/* <span className="thescore">{`${player2}`}</span> */}
           </div>
         </div>
         <p className="clear">

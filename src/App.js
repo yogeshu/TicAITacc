@@ -15,7 +15,6 @@ const winSet = [
 
 //  finding the ultimate play on the game that favors the computer
 //  const bestSpot = minimax(this.board, this.player.aiPlayer)
-
 class Algorithm {
   constructor(node, aiPlayer, huPlayer) {
     this.node = node;
@@ -128,6 +127,8 @@ class Algorithm {
     return false;
   }
 }
+
+
 class App extends Component {
 
   constructor(props) {
@@ -168,6 +169,7 @@ class App extends Component {
   }
 
   setPiece(piece) {
+      
     this.setState({
       currentPlayer: this.state.p1IsNext ? piece === "X" ? "O" : "X" : piece,
       gameSetting: {...this.state.gameSetting, piece:piece}
@@ -187,7 +189,7 @@ class App extends Component {
 
   handleClick(index) {
     const {boardInfo, currentPlayer} = this.state
-    const newBoardInfo = boardInfo.slice()
+    const newBoardInfo = boardInfo.slice() 
     const player = currentPlayer === "O" ? "X" : "O"
 
     newBoardInfo[index] = player
