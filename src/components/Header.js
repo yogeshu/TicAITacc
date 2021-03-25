@@ -13,7 +13,7 @@ const Header = (props)=>{
             <button className="thescore">  {`${player1}`}  -  {`${ player2}`}</button>
             {/* <span className="thescore"> </span> */}
        
-            <span style={{margin: 10}}>{`${  props.score  }`}</span>
+            <span style={{margin: 20}}>{`${  props.score  }`}</span>
 
             {/* <span className="thescore">{`${player2}`}</span> */}
           </div>
